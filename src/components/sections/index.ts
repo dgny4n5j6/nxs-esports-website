@@ -1,0 +1,10 @@
+export { default as FAQ } from "./FAQ";
+export { default as Download } from "./Download";
+export { default as Features } from "./Features";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as Navbar } from "./Navbar";
+export { default as Screenshots } from "./Screenshots";
+export { default as Tournaments } from "./Tournaments";
+export { default as Trust } from "./Trust";
