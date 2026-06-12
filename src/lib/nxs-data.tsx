@@ -1,6 +1,6 @@
 import type { DownloadInfo, FAQItem, Feature, NavItem, ScreenshotSlide, SocialLink, Stat, Step, Tournament } from "@/types";
 
-export const MEDIA_FIRE_APK_URL = "https://www.mediafire.com/file/rinypn7y8z5r8q8/NXS_Tournament.apk/file";
+export const MEDIA_FIRE_APK_URL = process.env.NEXT_PUBLIC_APK_URL || "#";
 export const APK_VERSION = "v4.8.0";
 export const APK_SIZE = "42.6 MB";
 export const ANDROID_SUPPORT = "Android 8.0+";
