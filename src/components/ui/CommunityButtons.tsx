@@ -1,16 +1,19 @@
 "use client";
 
-import { FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import type { ReactNode } from "react";
 import { communityLinks } from "@/lib/nxs-data";
+import type { CommunityPlatform } from "@/types";
 
 type CommunityButtonsProps = {
   className?: string;
   compact?: boolean;
 };
 
-const iconMap = {
+const iconMap: Record<CommunityPlatform, ReactNode> = {
   whatsapp: <FaWhatsapp aria-hidden="true" />,
   telegram: <FaTelegram aria-hidden="true" />,
+  instagram: <FaInstagram aria-hidden="true" />,
 };
 
 export function CommunityButtons({ className = "", compact = false }: CommunityButtonsProps) {

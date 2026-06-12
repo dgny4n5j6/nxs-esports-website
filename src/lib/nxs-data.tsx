@@ -23,6 +23,11 @@ export const communityLinks: CommunityLink[] = [
     href: "https://t.me/+5sXaQAO99dg4NTFl",
     platform: "telegram",
   },
+  {
+    label: "Instagram Broadcast",
+    href: "https://ig.me/j/AbaJCdqJ2yklEqDc/",
+    platform: "instagram",
+  },
 ];
 
 export const trustStats: Stat[] = [
@@ -130,5 +135,6 @@ export const faqs: FAQItem[] = [
 export const socialLinks: SocialLink[] = [
   { label: "Discord", href: "https://discord.com/" },
   { label: "Instagram", href: "https://www.instagram.com/" },
+  { label: "Instagram DM", href: "https://ig.me/j/AbaJCdqJ2yklEqDc/" },
   { label: "X", href: "https://x.com/" },
 ];
