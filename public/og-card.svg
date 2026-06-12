@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">NXS Esports Free Fire Tournaments</title>
+  <desc id="desc">Clean Open Graph preview card for NXS Esports Free Fire tournaments.</desc>
+  <defs>
+    <linearGradient id="og-simple-bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="55%" stop-color="#07111F"/>
+      <stop offset="100%" stop-color="#12052A"/>
+    </linearGradient>
+    <radialGradient id="og-simple-cyan" cx="20%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="og-simple-purple" cx="82%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#7B2CFF" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#7B2CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="og-simple-logo" x1="120" y1="100" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="52%" stop-color="#7B2CFF"/>
+      <stop offset="100%" stop-color="#00FFB2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#og-simple-bg)"/>
+  <rect width="1200" height="630" fill="url(#og-simple-cyan)"/>
+  <rect width="1200" height="630" fill="url(#og-simple-purple)"/>
+  <circle cx="1010" cy="112" r="170" fill="none" stroke="#00E5FF" stroke-width="3" stroke-dasharray="22 26" opacity="0.28"/>
+
+  <text x="252" y="260" text-anchor="middle" fill="url(#og-simple-logo)" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3" paint-order="stroke fill" font-family="Arial Black, Arial, sans-serif" font-size="154" font-weight="900" letter-spacing="-10">NXS</text>
+  <path d="M376 126l34 58-62-10 20 76-58-96 60 10-18-34 24-4Z" fill="#00FFB2" opacity="0.9"/>
+  <path d="M156 306h192v12H156Z" fill="url(#og-simple-logo)"/>
+  <text x="252" y="356" text-anchor="middle" fill="#F8FAFC" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="12">ESPORTS</text>
+
+  <text x="520" y="238" fill="#F8FAFC" font-family="Arial Black, Arial, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">Free Fire</text>
+  <text x="520" y="326" fill="url(#og-simple-logo)" font-family="Arial Black, Arial, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">Tournaments</text>
+  <text x="520" y="404" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="34" font-weight="700">Verified APK • Live Rooms • Instant Results</text>
+
+  <rect x="520" y="456" width="330" height="74" rx="37" fill="url(#og-simple-logo)"/>
+  <text x="685" y="505" text-anchor="middle" fill="#021019" font-family="Arial Black, Arial, sans-serif" font-size="30" font-weight="900" letter-spacing="3">DOWNLOAD APK</text>
+</svg>

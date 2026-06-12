@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { tournaments } from "@/lib/nxs-data";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -15,20 +12,17 @@ export default function Tournaments() {
     <section id="tournaments" className="relative py-20 sm:py-28">
       <div className="site-shell">
         <SectionHeading
-          eyebrow="Tournament Preview"
+          eyebrow="Free Fire Tournament Preview"
           title="Live rooms ready for your squad"
           description="Each card shows the details players need before they commit: fee, prize pool, slots, and match time."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {tournaments.map((tournament, index) => (
-            <motion.article
+            <article
               key={tournament.title}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
-              transition={{ duration: 0.55, delay: index * 0.08 }}
               className="glass-panel-strong relative overflow-hidden rounded-[2rem] p-6"
+              style={{ transitionDelay: `${index * 80}ms` }}
             >
               <div className="absolute right-[-4rem] top-[-4rem] h-32 w-32 rounded-full bg-cyan/15 blur-3xl" aria-hidden="true" />
               <div className="flex items-start justify-between gap-4">
@@ -62,11 +56,12 @@ export default function Tournaments() {
 
               <a
                 href="#download"
+                aria-label={`Join ${tournament.title} Free Fire tournament`}
                 className="download-cta download-cta-secondary mt-6 inline-flex h-12 w-full items-center justify-center text-xs font-black"
               >
                 Join Room
               </a>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

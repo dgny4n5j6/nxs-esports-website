@@ -25,8 +25,10 @@ export function LoadingScreen() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.45 }}
-          className="fixed inset-0 z-[120] grid place-items-center bg-ink"
+          role="status"
+          aria-live="polite"
           aria-label="Loading NXS Esports"
+          className="fixed inset-0 z-[120] grid place-items-center bg-ink"
         >
           <div className="relative grid place-items-center">
             <div className="absolute h-40 w-40 animate-pulse rounded-full bg-cyan/10 blur-3xl" />

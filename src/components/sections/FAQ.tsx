@@ -12,7 +12,7 @@ export default function FAQ() {
     <section id="faq" className="relative py-20 sm:py-28">
       <div className="site-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <SectionHeading
-          eyebrow="FAQ"
+          eyebrow="Free Fire Tournament FAQ"
           title="Everything players ask before downloading"
           description="Clear answers for installation, withdrawals, safety, and tournament access."
           align="left"
@@ -52,6 +52,7 @@ export default function FAQ() {
                   id={`faq-panel-${index}`}
                   role="region"
                   aria-labelledby={`faq-button-${index}`}
+                  aria-hidden={!isOpen}
                   initial={false}
                   animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
                   className="faq-panel"

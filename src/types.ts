@@ -53,3 +53,11 @@ export type SocialLink = {
   label: string;
   href: string;
 };
+
+export type CommunityPlatform = "whatsapp" | "telegram";
+
+export type CommunityLink = {
+  label: string;
+  href: string;
+  platform: CommunityPlatform;
+};

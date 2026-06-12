@@ -18,6 +18,14 @@ export function MagneticButton({ children, className = "", onPointerMove, onPoin
   const springX = useSpring(x, { stiffness: 260, damping: 28 });
   const springY = useSpring(y, { stiffness: 260, damping: 28 });
   const rotate = useTransform(springX, [-18, 18], [-1.4, 1.4]);
+  const href = props.href?.toString() ?? "";
+  const isHashLink = href.startsWith("#");
+  const opensNewTab = !isHashLink && (props.target === "_blank" || /^https?:\/\//i.test(href));
+  const relTokens = opensNewTab
+    ? ["noopener", "noreferrer", ...(props.rel?.split(/\s+/) ?? [])]
+    : props.rel?.split(/\s+/) ?? [];
+  const rel = [...new Set(relTokens.filter(Boolean))].join(" ");
+  const motionProps = { ...props, rel, target: opensNewTab ? props.target : undefined } as ComponentPropsWithoutRef<typeof motion.a>;
 
   const handlePointerMove = (event: React.PointerEvent<HTMLAnchorElement>) => {
     onPointerMove?.(event);
@@ -39,8 +47,6 @@ export function MagneticButton({ children, className = "", onPointerMove, onPoin
     x.set(0);
     y.set(0);
   };
-
-  const motionProps = props as unknown as ComponentPropsWithoutRef<typeof motion.a>;
 
   return (
     <motion.a

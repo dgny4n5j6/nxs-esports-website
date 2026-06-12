@@ -1,4 +1,4 @@
-import type { DownloadInfo, FAQItem, Feature, NavItem, ScreenshotSlide, SocialLink, Stat, Step, Tournament } from "@/types";
+import type { CommunityLink, DownloadInfo, FAQItem, Feature, NavItem, ScreenshotSlide, SocialLink, Stat, Step, Tournament } from "@/types";
 
 export const MEDIA_FIRE_APK_URL = process.env.NEXT_PUBLIC_APK_URL || "#";
 export const APK_VERSION = "v4.8.0";
@@ -12,6 +12,19 @@ export const navItems: NavItem[] = [
   { label: "FAQ", href: "#faq" },
 ];
 
+export const communityLinks: CommunityLink[] = [
+  {
+    label: "WhatsApp Group",
+    href: "https://chat.whatsapp.com/KRNjOO7iWHhJCrtw2O48Df",
+    platform: "whatsapp",
+  },
+  {
+    label: "Telegram Channel",
+    href: "https://t.me/+5sXaQAO99dg4NTFl",
+    platform: "telegram",
+  },
+];
+
 export const trustStats: Stat[] = [
   { label: "Registered Players", value: 428150, suffix: "+" },
   { label: "Tournaments Hosted", value: 12840, suffix: "+" },
@@ -22,7 +35,7 @@ export const trustStats: Stat[] = [
 export const features: Feature[] = [
   {
     title: "Wallet System",
-    description: "Track deposits, bonuses, entries, and rewards inside a secure mobile-first wallet.",
+    description: "Track deposits, bonuses, entries, and rewards inside a secure Free Fire tournament wallet.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H18a1.5 1.5 0 0 1 1.5 1.5V18a1.5 1.5 0 0 1-1.5 1.5H6.5A2.5 2.5 0 0 1 4 17V7.5Z" stroke="currentColor" strokeWidth="1.8" />
@@ -32,7 +45,7 @@ export const features: Feature[] = [
   },
   {
     title: "Instant Results",
-    description: "Live result syncing keeps brackets, rankings, and rewards accurate the moment a match ends.",
+    description: "Live result syncing keeps Free Fire brackets, rankings, and rewards accurate the moment a match ends.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M5 12.5 9.2 17 19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -52,7 +65,7 @@ export const features: Feature[] = [
   },
   {
     title: "Tournament Joining",
-    description: "Enter rooms in seconds with clear fees, prize pools, slots, and match timing.",
+    description: "Enter Free Fire rooms in seconds with clear fees, prize pools, slots, and match timing.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M8 21h8M12 17v4M7 4h10l-1 7a4 4 0 0 1-8 0L7 4Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -108,7 +121,7 @@ export const downloadInfo: DownloadInfo[] = [
 ];
 
 export const faqs: FAQItem[] = [
-  { question: "How do I install the NXS ESPORTS APK?", answer: "Download the APK from the official button, allow installation from your device settings if prompted, open the app, and complete profile verification before joining tournaments." },
+  { question: "How do I install the NXS ESPORTS APK?", answer: "Download the APK from the official secure button, allow installation from your device settings if prompted, open the app, and complete profile verification before joining tournaments." },
   { question: "How do withdrawals work?", answer: "Open Wallet, choose Withdraw, enter the amount and payment details, then submit. Verified accounts receive priority processing." },
   { question: "Is the APK safe to download?", answer: "Use only the official secure download button. The app is built for Android with wallet protections, verified account flows, and transparent tournament rules." },
   { question: "Can I join tournaments for free?", answer: "NXS ESPORTS includes free and paid rooms. Each tournament card shows the entry fee, prize pool, slots, and match time before you join." },

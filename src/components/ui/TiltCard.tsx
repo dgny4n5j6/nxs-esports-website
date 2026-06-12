@@ -1,7 +1,4 @@
-"use client";
-
 import type { PointerEvent, ReactNode } from "react";
-import { useRef } from "react";
 
 type TiltCardProps = {
   children: ReactNode;
@@ -9,8 +6,6 @@ type TiltCardProps = {
 };
 
 export function TiltCard({ children, className = "" }: TiltCardProps) {
-  const ref = useRef<HTMLDivElement>(null);
-
   const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
     const element = event.currentTarget;
     const rect = element.getBoundingClientRect();
@@ -28,7 +23,6 @@ export function TiltCard({ children, className = "" }: TiltCardProps) {
 
   return (
     <div
-      ref={ref}
       className={className}
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}

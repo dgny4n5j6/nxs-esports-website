@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
 
 export function useMouseGlow<T extends HTMLElement>() {
   const ref = useRef<T>(null);
@@ -11,18 +10,33 @@ export function useMouseGlow<T extends HTMLElement>() {
       return;
     }
 
-    const moveX = gsap.quickTo(element, "left", { duration: 0.45, ease: "power3" });
-    const moveY = gsap.quickTo(element, "top", { duration: 0.45, ease: "power3" });
+    let frame = 0;
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let currentX = targetX;
+    let currentY = targetY;
+
+    const update = () => {
+      currentX += (targetX - currentX) * 0.18;
+      currentY += (targetY - currentY) * 0.18;
+
+      element.style.left = `${currentX}px`;
+      element.style.top = `${currentY}px`;
+
+      frame = window.requestAnimationFrame(update);
+    };
 
     const handlePointerMove = (event: PointerEvent) => {
-      moveX(event.clientX);
-      moveY(event.clientY);
+      targetX = event.clientX;
+      targetY = event.clientY;
     };
 
     window.addEventListener("pointermove", handlePointerMove, { passive: true });
+    frame = window.requestAnimationFrame(update);
 
     return () => {
       window.removeEventListener("pointermove", handlePointerMove);
+      window.cancelAnimationFrame(frame);
     };
   }, []);
 
