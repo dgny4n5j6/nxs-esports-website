@@ -9,7 +9,7 @@ export function StickyDownload() {
         href={process.env.NEXT_PUBLIC_APK_URL || "#"}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Securely download the NXS Esports APK"
+        aria-label="Securely download the GS Esports APK"
         className="download-cta download-cta-primary pulse-download mx-auto flex h-14 max-w-sm items-center justify-center text-xs sm:text-sm"
       >
         Secure Download APK

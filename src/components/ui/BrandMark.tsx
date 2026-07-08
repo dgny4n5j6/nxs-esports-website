@@ -27,7 +27,7 @@ export function BrandMark({ size = "nav", className = "" }: BrandMarkProps) {
       <div className="relative grid h-full w-full place-items-center overflow-hidden rounded-full border border-cyan/30 bg-white/[0.045] p-[10%] shadow-cyan">
         <Image
           src="/nxs-logo.svg"
-          alt="NXS Esports logo"
+          alt="GS Esports logo"
           fill
           sizes={imageSizes[size]}
           className="object-contain drop-shadow-[0_0_18px_rgba(0,229,255,0.75)]"

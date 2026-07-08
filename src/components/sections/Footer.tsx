@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { communityLinks, socialLinks } from "@/lib/nxs-data";
+import { communityLinks } from "@/lib/nxs-data";
 import { BrandMark } from "@/components/ui/BrandMark";
 import { CommunityButtons } from "@/components/ui/CommunityButtons";
 
@@ -9,10 +9,10 @@ export default function Footer() {
       <div className="site-shell">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-end">
           <div>
-            <Link href="#home" className="inline-flex max-w-full items-center gap-3" aria-label="NXS Esports home">
+            <Link href="#home" className="inline-flex max-w-full items-center gap-3" aria-label="GS Esports home">
               <BrandMark size="footer" />
               <span className="min-w-0">
-                <span className="block truncate text-sm font-black uppercase tracking-[0.34em] text-white">NXS ESPORTS</span>
+                <span className="block truncate text-sm font-black uppercase tracking-[0.34em] text-white">GS ESPORTS</span>
                 <span className="block -mt-1 text-xs font-bold uppercase tracking-[0.3em] text-purple">Free Fire Tournament Arena</span>
               </span>
             </Link>
@@ -51,15 +51,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col justify-between gap-5 border-t border-white/10 pt-6 text-sm text-white/45 sm:flex-row sm:items-center">
-          <p>© 2026 NXS ESPORTS. All rights reserved.</p>
+          <p>© 2026 GS ESPORTS. All rights reserved.</p>
           <div className="flex flex-wrap gap-3">
-            {socialLinks.map((link) => (
+            {communityLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Open NXS Esports ${link.label}`}
+                aria-label={`Open GS Esports ${link.label}`}
                 className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-white/70 transition-colors hover:border-cyan/40 hover:text-cyan"
               >
                 {link.label}

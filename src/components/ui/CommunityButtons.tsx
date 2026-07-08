@@ -25,7 +25,7 @@ export function CommunityButtons({ className = "", compact = false }: CommunityB
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Join NXS Esports ${link.label}`}
+          aria-label={`Join GS Esports ${link.label}`}
           className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cyan transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan/40 hover:bg-cyan/10 hover:text-white sm:h-11 sm:w-11"
         >
           <span className={compact ? "text-lg" : "text-xl"}>{iconMap[link.platform]}</span>

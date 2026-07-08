@@ -15,6 +15,7 @@ export function useMouseGlow<T extends HTMLElement>() {
     let targetY = window.innerHeight / 2;
     let currentX = targetX;
     let currentY = targetY;
+    let running = false;
 
     const update = () => {
       currentX += (targetX - currentX) * 0.18;
@@ -23,20 +24,29 @@ export function useMouseGlow<T extends HTMLElement>() {
       element.style.left = `${currentX}px`;
       element.style.top = `${currentY}px`;
 
-      frame = window.requestAnimationFrame(update);
+      if (Math.abs(targetX - currentX) > 0.5 || Math.abs(targetY - currentY) > 0.5) {
+        frame = window.requestAnimationFrame(update);
+      } else {
+        running = false;
+      }
     };
 
     const handlePointerMove = (event: PointerEvent) => {
       targetX = event.clientX;
       targetY = event.clientY;
+
+      if (!running) {
+        running = true;
+        frame = window.requestAnimationFrame(update);
+      }
     };
 
     window.addEventListener("pointermove", handlePointerMove, { passive: true });
-    frame = window.requestAnimationFrame(update);
 
     return () => {
       window.removeEventListener("pointermove", handlePointerMove);
       window.cancelAnimationFrame(frame);
+      running = false;
     };
   }, []);
 

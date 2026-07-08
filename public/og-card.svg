@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">NXS Esports Free Fire Tournaments</title>
-  <desc id="desc">Clean Open Graph preview card for NXS Esports Free Fire tournaments.</desc>
+  <title id="title">GS Esports Free Fire Tournaments</title>
+  <desc id="desc">Clean Open Graph preview card for GS Esports Free Fire tournaments.</desc>
   <defs>
     <linearGradient id="og-simple-bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#020617"/>
@@ -27,7 +27,7 @@
   <rect width="1200" height="630" fill="url(#og-simple-purple)"/>
   <circle cx="1010" cy="112" r="170" fill="none" stroke="#00E5FF" stroke-width="3" stroke-dasharray="22 26" opacity="0.28"/>
 
-  <text x="252" y="260" text-anchor="middle" fill="url(#og-simple-logo)" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3" paint-order="stroke fill" font-family="Arial Black, Arial, sans-serif" font-size="154" font-weight="900" letter-spacing="-10">NXS</text>
+  <text x="252" y="260" text-anchor="middle" fill="url(#og-simple-logo)" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3" paint-order="stroke fill" font-family="Arial Black, Arial, sans-serif" font-size="184" font-weight="900" letter-spacing="-6">GS</text>
   <path d="M376 126l34 58-62-10 20 76-58-96 60 10-18-34 24-4Z" fill="#00FFB2" opacity="0.9"/>
   <path d="M156 306h192v12H156Z" fill="url(#og-simple-logo)"/>
   <text x="252" y="356" text-anchor="middle" fill="#F8FAFC" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="12">ESPORTS</text>

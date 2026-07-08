@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
 
           <h1 className="mt-7 max-w-full break-words text-5xl font-black uppercase leading-[0.86] tracking-[-0.08em] text-white sm:text-6xl lg:text-7xl xl:text-8xl">
-            <span className="gradient-text">NXS Esports</span>
+            <span className="gradient-text">GS Esports</span>
             <br />
             Free Fire Tournaments
           </h1>
@@ -59,7 +59,7 @@ export default function Hero() {
               href={process.env.NEXT_PUBLIC_APK_URL || "#"}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Download the verified NXS Esports APK"
+              aria-label="Download the verified GS Esports APK"
               className="download-cta download-cta-primary pulse-download inline-flex h-14 items-center justify-center px-6 text-xs sm:text-sm"
             >
               Download APK Now
@@ -74,7 +74,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-white/[0.045] p-4 backdrop-blur-xl">
-            <p className="text-xs font-black uppercase tracking-[0.22em] text-white/52">Join the official NXS community</p>
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-white/52">Join the official GS community</p>
             <CommunityButtons className="mt-3" />
           </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
           className="relative hidden min-w-0 justify-center lg:flex"
         >
           <div className="absolute inset-0 -z-10 rounded-[3rem] border border-cyan/20 bg-cyan/[0.03] blur-2xl" />
-          <PhoneMockup title="NXS Free Fire Arena" metric="LIVE" variant="hero" />
+           <PhoneMockup title="GS Free Fire Arena" metric="LIVE" variant="hero" />
         </motion.div>
       </div>
     </section>

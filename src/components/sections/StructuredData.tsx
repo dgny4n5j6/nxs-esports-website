@@ -1,11 +1,11 @@
-import { communityLinks, socialLinks } from "@/lib/nxs-data";
+import { communityLinks } from "@/lib/nxs-data";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://nxs-esports.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gs-esports.vercel.app";
 const cleanBaseUrl = baseUrl.replace(/\/$/, "");
-const siteName = "NXS Esports";
+const siteName = "GS Esports";
 const description =
-  "NXS Esports hosts Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Telegram community access, secure wallet flows, and fast reward withdrawals.";
-const sameAs = [...socialLinks.map((link) => link.href), ...communityLinks.map((link) => link.href)];
+  "GS Esports hosts Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Telegram community access, secure wallet flows, and fast reward withdrawals.";
+const sameAs = [...communityLinks.map((link) => link.href)];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -37,7 +37,7 @@ const jsonLd = {
     {
       "@type": "WebApplication",
       "@id": `${cleanBaseUrl}/#app`,
-      name: "NXS Esports APK",
+      name: "GS Esports APK",
       applicationCategory: "GameApplication",
       operatingSystem: "Android",
       description,
@@ -51,7 +51,7 @@ const jsonLd = {
     {
       "@type": "Event",
       "@id": `${cleanBaseUrl}/#free-fire-tournaments`,
-      name: "NXS Esports Free Fire Tournaments",
+      name: "GS Esports Free Fire Tournaments",
       description: "Daily Free Fire tournament rooms with transparent fees, prize pools, slots, and match times.",
       eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
       eventStatus: "https://schema.org/EventScheduled",

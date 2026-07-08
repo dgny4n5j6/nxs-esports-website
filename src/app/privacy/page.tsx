@@ -3,8 +3,8 @@ import { Footer, Navbar } from "@/components/sections";
 import { StickyDownload } from "@/components/ui/StickyDownload";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | NXS Esports",
-  description: "Privacy Policy for NXS Esports Free Fire tournaments, APK downloads, accounts, and tournament participation.",
+  title: "Privacy Policy | GS Esports",
+  description: "Privacy Policy for GS Esports Free Fire tournaments, APK downloads, accounts, and tournament participation.",
 };
 
 export default function PrivacyPage() {
@@ -14,17 +14,17 @@ export default function PrivacyPage() {
       <article className="site-shell mx-auto max-w-4xl px-4 py-32">
         <p className="text-xs font-black uppercase tracking-[0.34em] text-cyan">Privacy Policy</p>
         <h1 className="mt-5 text-4xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white sm:text-6xl">
-          NXS Esports Privacy Policy
+          GS Esports Privacy Policy
         </h1>
         <p className="mt-6 text-base leading-8 text-white/62">
-          This privacy policy explains how NXS Esports handles information connected to APK downloads, Free Fire tournament participation, support requests, and website analytics.
+          This privacy policy explains how GS Esports handles information connected to APK downloads, Free Fire tournament participation, support requests, and website analytics.
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-white/62">
           <section>
             <h2 className="text-xl font-black uppercase tracking-[-0.03em] text-white">Information collected</h2>
             <p className="mt-3">
-              We may collect information you provide through contact forms, tournament support messages, device/app installation events, analytics, and account-related actions inside the NXS Esports ecosystem.
+              We may collect information you provide through contact forms, tournament support messages, device/app installation events, analytics, and account-related actions inside the GS Esports ecosystem.
             </p>
           </section>
 
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-black uppercase tracking-[-0.03em] text-white">Data protection</h2>
             <p className="mt-3">
-              NXS Esports uses reasonable technical and organizational safeguards to protect personal information. No internet service is completely secure, so users should protect their device and account credentials.
+              GS Esports uses reasonable technical and organizational safeguards to protect personal information. No internet service is completely secure, so users should protect their device and account credentials.
             </p>
           </section>
 
@@ -52,7 +52,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-black uppercase tracking-[-0.03em] text-white">Contact</h2>
             <p className="mt-3">
-              For privacy questions, contact <a href="mailto:contact@nxs-esports.com" className="text-cyan underline underline-offset-4">contact@nxs-esports.com</a>.
+              For privacy questions, contact <a href="mailto:contact@gs-esports.com" className="text-cyan underline underline-offset-4">contact@gs-esports.com</a>.
             </p>
           </section>
         </div>

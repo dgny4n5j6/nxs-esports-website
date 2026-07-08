@@ -49,11 +49,6 @@ export type FAQItem = {
   answer: string;
 };
 
-export type SocialLink = {
-  label: string;
-  href: string;
-};
-
 export type CommunityPlatform = "whatsapp" | "telegram" | "instagram";
 
 export type CommunityLink = {

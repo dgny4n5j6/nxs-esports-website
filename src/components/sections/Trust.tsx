@@ -7,12 +7,12 @@ import { trustStats } from "@/lib/nxs-data";
 
 export default function Trust() {
   return (
-    <section aria-label="NXS Esports trust statistics" className="relative py-12 sm:py-16">
+    <section aria-label="GS Esports trust statistics" className="relative py-12 sm:py-16">
       <div className="site-shell">
         <SectionHeading
           eyebrow="Free Fire Trust Layer"
           title="Credibility built for competitive gamers"
-          description="Live numbers from the NXS ESPORTS ecosystem."
+          description="Live numbers from the GS ESPORTS ecosystem."
           align="left"
         />
         <motion.div

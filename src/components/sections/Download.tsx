@@ -18,7 +18,7 @@ export default function Download() {
                 Install the arena. Start winning.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
-                Get the latest NXS ESPORTS APK for verified Free Fire tournament access, wallet controls, live match updates, and fast reward withdrawals.
+                Get the latest GS ESPORTS APK for verified Free Fire tournament access, wallet controls, live match updates, and fast reward withdrawals.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -26,7 +26,7 @@ export default function Download() {
                   href={process.env.NEXT_PUBLIC_APK_URL || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Securely download the NXS Esports APK"
+                  aria-label="Securely download the GS Esports APK"
                   className="download-cta download-cta-primary pulse-download inline-flex h-16 items-center justify-center px-8 text-sm sm:min-w-[280px]"
                 >
                   Secure Download APK

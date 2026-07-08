@@ -63,7 +63,7 @@ export default function Screenshots() {
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.24),transparent_28%)]" />
                       <div className="absolute inset-5 rounded-[1.45rem] border border-white/10 bg-ink/72 p-4 backdrop-blur-xl">
                         <div className="flex items-center justify-between">
-                          <span className="rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-xs font-black uppercase tracking-[0.2em] text-cyan">NXS</span>
+                          <span className="rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-xs font-black uppercase tracking-[0.2em] text-cyan">GS</span>
                           <span className="text-xs font-black uppercase tracking-[0.2em] text-white/52">{slide.metric}</span>
                         </div>
 
@@ -106,7 +106,7 @@ export default function Screenshots() {
             </motion.div>
           </div>
 
-          <div role="tablist" aria-label="NXS Esports app screenshots" className="mt-5 flex items-center justify-center gap-2">
+          <div role="tablist" aria-label="GS Esports app screenshots" className="mt-5 flex items-center justify-center gap-2">
             {screenshotSlides.map((slide, index) => {
               const tabId = `screenshot-tab-${index}`;
               const panelId = `screenshot-panel-${index}`;

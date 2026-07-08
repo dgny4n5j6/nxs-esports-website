@@ -3,8 +3,8 @@ import { Footer, Navbar } from "@/components/sections";
 import { StickyDownload } from "@/components/ui/StickyDownload";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | NXS Esports",
-  description: "Terms of Use for NXS Esports Free Fire tournaments, APK downloads, rewards, and competitive play.",
+  title: "Terms of Use | GS Esports",
+  description: "Terms of Use for GS Esports Free Fire tournaments, APK downloads, rewards, and competitive play.",
 };
 
 export default function TermsPage() {
@@ -14,10 +14,10 @@ export default function TermsPage() {
       <article className="site-shell mx-auto max-w-4xl px-4 py-32">
         <p className="text-xs font-black uppercase tracking-[0.34em] text-cyan">Terms of Use</p>
         <h1 className="mt-5 text-4xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white sm:text-6xl">
-          NXS Esports Terms of Use
+          GS Esports Terms of Use
         </h1>
         <p className="mt-6 text-base leading-8 text-white/62">
-          By using the NXS Esports website, APK, or tournament services, you agree to these terms and to participate in Free Fire tournaments fairly and responsibly.
+          By using the GS Esports website, APK, or tournament services, you agree to these terms and to participate in Free Fire tournaments fairly and responsibly.
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-white/62">
@@ -45,14 +45,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-black uppercase tracking-[-0.03em] text-white">Service availability</h2>
             <p className="mt-3">
-              NXS Esports may update, pause, or discontinue tournaments, app features, or website sections without prior notice when required for security, compliance, or operational reasons.
+              GS Esports may update, pause, or discontinue tournaments, app features, or website sections without prior notice when required for security, compliance, or operational reasons.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-black uppercase tracking-[-0.03em] text-white">Contact</h2>
             <p className="mt-3">
-              For terms questions, contact <a href="mailto:contact@nxs-esports.com" className="text-cyan underline underline-offset-4">contact@nxs-esports.com</a>.
+              For terms questions, contact <a href="mailto:contact@gs-esports.com" className="text-cyan underline underline-offset-4">contact@gs-esports.com</a>.
             </p>
           </section>
         </div>

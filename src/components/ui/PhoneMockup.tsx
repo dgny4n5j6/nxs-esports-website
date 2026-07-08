@@ -4,16 +4,16 @@ type PhoneMockupProps = {
   variant?: "hero" | "carousel";
 };
 
-export function PhoneMockup({ title = "NXS Arena", metric = "LIVE", variant = "hero" }: PhoneMockupProps) {
+export function PhoneMockup({ title = "GS Arena", metric = "LIVE", variant = "hero" }: PhoneMockupProps) {
   return (
     <div className="phone-shell animate-phoneFloat">
       <div className="phone-screen">
         <div className="scan-line" aria-hidden="true" />
         <div className="relative z-10 flex h-full flex-col">
           <div className="mb-5 flex items-center justify-between">
-            <span className="rounded-full border border-cyan/40 bg-cyan/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-cyan">
-              NXS
-            </span>
+              <span className="rounded-full border border-cyan/40 bg-cyan/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-cyan">
+                GS
+              </span>
             <span className="rounded-full border border-green/30 bg-green/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.22em] text-green">
               {metric}
             </span>

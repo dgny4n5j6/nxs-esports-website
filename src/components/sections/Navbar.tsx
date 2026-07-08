@@ -43,10 +43,10 @@ export default function Navbar() {
       style={{ backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)" }}
     >
       <nav className="site-shell flex h-20 items-center justify-between gap-3" aria-label="Primary navigation">
-        <Link href="#home" onClick={() => setOpen(false)} className="group inline-flex min-w-0 items-center gap-3" aria-label="NXS Esports home">
+           <Link href="#home" onClick={() => setOpen(false)} className="group inline-flex min-w-0 items-center gap-3" aria-label="GS Esports home">
           <BrandMark size="nav" className="shrink-0 transition-transform group-hover:rotate-3 group-hover:scale-105" />
           <span className="hidden min-w-0 sm:block">
-            <span className="block truncate text-sm font-black uppercase tracking-[0.34em] text-white">NXS ESPORTS</span>
+            <span className="block truncate text-sm font-black uppercase tracking-[0.34em] text-white">GS ESPORTS</span>
             <span className="block -mt-1 text-xs font-bold uppercase tracking-[0.3em] text-purple">Free Fire Tournaments</span>
           </span>
         </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
             href={process.env.NEXT_PUBLIC_APK_URL || "#"}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Download the verified NXS Esports APK"
+                aria-label="Download the verified GS Esports APK"
             className="download-cta download-cta-primary pulse-download inline-flex h-12 shrink-0 items-center justify-center px-6 text-xs"
           >
             Download APK
@@ -114,7 +114,7 @@ export default function Navbar() {
                 href={process.env.NEXT_PUBLIC_APK_URL || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Download the verified NXS Esports APK"
+            aria-label="Download the verified GS Esports APK"
                 className="download-cta download-cta-primary pulse-download mt-2 flex h-12 items-center justify-center px-5 text-xs"
               >
                 Download APK

@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteName = "NXS Esports";
-const title = "NXS Esports | Ultimate Free Fire Tournaments";
+const siteName = "GS Esports";
+const title = "GS Esports | Ultimate Free Fire Tournaments";
 const description =
-  "NXS Esports is the ultimate destination for Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Telegram community access, secure wallet flows, and fast reward withdrawals.";
+  "GS Esports is the ultimate destination for Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Telegram community access, secure wallet flows, and fast reward withdrawals.";
 const keywords = [
-  "NXS Esports",
+  "GS Esports",
   "Free Fire Tournaments",
   "Free Fire tournament",
   "Free Fire tournament APK",
@@ -26,11 +26,11 @@ const keywords = [
   "esports APK download",
   "daily Free Fire rooms",
   "Free Fire rewards",
-  "NXS ESPORTS APK",
-  "NXS Esports WhatsApp",
-  "NXS Esports Telegram",
+  "GS ESPORTS APK",
+  "GS Esports WhatsApp",
+  "GS Esports Telegram",
 ];
-const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://nxs-esports.vercel.app");
+const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://gs-esports.vercel.app");
 const imageUrl = `${metadataBase.href.replace(/\/$/, "")}/og-card.svg`;
 
 const metadata: Metadata = {
@@ -79,7 +79,7 @@ const metadata: Metadata = {
         url: imageUrl,
         width: 1200,
         height: 630,
-        alt: "NXS Esports Free Fire Tournaments preview card",
+        alt: "GS Esports Free Fire Tournaments preview card",
         type: "image/svg+xml",
       },
     ],

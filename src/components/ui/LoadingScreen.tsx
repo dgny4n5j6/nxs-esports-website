@@ -27,7 +27,7 @@ export function LoadingScreen() {
           transition={{ duration: 0.45 }}
           role="status"
           aria-live="polite"
-          aria-label="Loading NXS Esports"
+          aria-label="Loading GS Esports"
           className="fixed inset-0 z-[120] grid place-items-center bg-ink"
         >
           <div className="relative grid place-items-center">

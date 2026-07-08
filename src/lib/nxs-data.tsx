@@ -1,4 +1,4 @@
-import type { CommunityLink, DownloadInfo, FAQItem, Feature, NavItem, ScreenshotSlide, SocialLink, Stat, Step, Tournament } from "@/types";
+import type { CommunityLink, DownloadInfo, FAQItem, Feature, NavItem, ScreenshotSlide, Stat, Step, Tournament } from "@/types";
 
 export const MEDIA_FIRE_APK_URL = process.env.NEXT_PUBLIC_APK_URL || "#";
 export const APK_VERSION = "v4.8.0";
@@ -107,7 +107,7 @@ export const screenshotSlides: ScreenshotSlide[] = [
 ];
 
 export const steps: Step[] = [
-  { number: "01", title: "Download APK", description: "Install the official NXS ESPORTS APK and complete your gamer profile." },
+  { number: "01", title: "Download APK", description: "Install the official GS ESPORTS APK and complete your gamer profile." },
   { number: "02", title: "Join Tournament", description: "Pick a live room, confirm the entry, and queue with your squad." },
   { number: "03", title: "Win Rewards", description: "Play, submit proof, and track withdrawals from the secure wallet." },
 ];
@@ -126,15 +126,8 @@ export const downloadInfo: DownloadInfo[] = [
 ];
 
 export const faqs: FAQItem[] = [
-  { question: "How do I install the NXS ESPORTS APK?", answer: "Download the APK from the official secure button, allow installation from your device settings if prompted, open the app, and complete profile verification before joining tournaments." },
+  { question: "How do I install the GS ESPORTS APK?", answer: "Download the APK from the official secure button, allow installation from your device settings if prompted, open the app, and complete profile verification before joining tournaments." },
   { question: "How do withdrawals work?", answer: "Open Wallet, choose Withdraw, enter the amount and payment details, then submit. Verified accounts receive priority processing." },
   { question: "Is the APK safe to download?", answer: "Use only the official secure download button. The app is built for Android with wallet protections, verified account flows, and transparent tournament rules." },
-  { question: "Can I join tournaments for free?", answer: "NXS ESPORTS includes free and paid rooms. Each tournament card shows the entry fee, prize pool, slots, and match time before you join." },
-];
-
-export const socialLinks: SocialLink[] = [
-  { label: "Discord", href: "https://discord.com/" },
-  { label: "Instagram", href: "https://www.instagram.com/" },
-  { label: "Instagram DM", href: "https://ig.me/j/AbaJCdqJ2yklEqDc/" },
-  { label: "X", href: "https://x.com/" },
+  { question: "Can I join tournaments for free?", answer: "GS ESPORTS includes free and paid rooms. Each tournament card shows the entry fee, prize pool, slots, and match time before you join." },
 ];
