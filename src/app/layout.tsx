@@ -14,21 +14,20 @@ const geistMono = Geist_Mono({
 });
 
 const siteName = "GS Esports";
-const title = "GS Esports | Ultimate Free Fire Tournaments";
+const title = "GS Esports | Free Fire Tournament App";
 const description =
-  "GS Esports is the ultimate destination for Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Telegram community access, secure wallet flows, and fast reward withdrawals.";
+  "Download the official GS Esports app for Free Fire tournaments, live rooms, instant results, and secure wallet access.";
 const keywords = [
   "GS Esports",
   "Free Fire Tournaments",
-  "Free Fire tournament",
-  "Free Fire tournament APK",
-  "mobile esports tournaments",
-  "esports APK download",
-  "daily Free Fire rooms",
+  "Free Fire APK",
+  "mobile esports",
+  "Free Fire app",
+  "tournament app",
+  "Free Fire rooms",
+  "GS Esports APK",
   "Free Fire rewards",
-  "GS ESPORTS APK",
-  "GS Esports WhatsApp",
-  "GS Esports Telegram",
+  "Free Fire wallet",
 ];
 const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://gs-esports.vercel.app");
 const imageUrl = `${metadataBase.href.replace(/\/$/, "")}/og-card.svg`;
@@ -49,9 +48,9 @@ const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/brand.png",
-    shortcut: "/brand.png",
+    icon: "/web_icon.svg",
+    apple: "/web_icon.svg",
+    shortcut: "/web_icon.svg",
   },
   alternates: {
     canonical: metadataBase.href,
@@ -79,7 +78,7 @@ const metadata: Metadata = {
         url: imageUrl,
         width: 1200,
         height: 630,
-        alt: "GS Esports Free Fire Tournaments preview card",
+        alt: "GS Esports Free Fire Tournament App",
         type: "image/svg+xml",
       },
     ],
@@ -102,7 +101,7 @@ export { metadata, viewport };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full flex flex-col bg-ink text-white">
+      <body className="min-h-full flex flex-col bg-background text-foreground">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-cyan focus:px-4 focus:py-3 focus:text-xs focus:font-black focus:uppercase focus:tracking-[0.2em] focus:text-ink"

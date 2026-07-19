@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 export function useMouseGlow<T extends HTMLElement>() {
@@ -18,13 +20,13 @@ export function useMouseGlow<T extends HTMLElement>() {
     let running = false;
 
     const update = () => {
-      currentX += (targetX - currentX) * 0.18;
-      currentY += (targetY - currentY) * 0.18;
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
 
       element.style.left = `${currentX}px`;
       element.style.top = `${currentY}px`;
 
-      if (Math.abs(targetX - currentX) > 0.5 || Math.abs(targetY - currentY) > 0.5) {
+      if (Math.abs(targetX - currentX) > 0.3 || Math.abs(targetY - currentY) > 0.3) {
         frame = window.requestAnimationFrame(update);
       } else {
         running = false;

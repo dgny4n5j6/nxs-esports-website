@@ -1,10 +1,10 @@
-import { communityLinks } from "@/lib/nxs-data";
+import { communityLinks } from "@/lib/gs-data";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gs-esports.vercel.app";
 const cleanBaseUrl = baseUrl.replace(/\/$/, "");
 const siteName = "GS Esports";
 const description =
-  "GS Esports hosts Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Telegram community access, secure wallet flows, and fast reward withdrawals.";
+  "GS Esports hosts Free Fire tournaments, daily mobile esports rooms, verified APK downloads, instant results, WhatsApp and Discord community access, secure wallet flows, and fast reward withdrawals.";
 const sameAs = [...communityLinks.map((link) => link.href)];
 
 const jsonLd = {
@@ -15,7 +15,7 @@ const jsonLd = {
       "@id": `${cleanBaseUrl}/#organization`,
       name: siteName,
       url: cleanBaseUrl,
-      logo: `${cleanBaseUrl}/brand.png`,
+      logo: `${cleanBaseUrl}/web_icon.svg`,
       sameAs,
     },
     {

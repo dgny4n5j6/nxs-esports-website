@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://nxs-esports.vercel.app").replace(/\/$/, "");
+const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://gs-esports.vercel.app").replace(/\/$/, "");
 
 export const dynamic = "force-static";
 

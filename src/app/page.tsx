@@ -1,22 +1,29 @@
-import { FAQ, Download, Features, Footer, Hero, HowItWorks, Navbar, Screenshots, Tournaments, Trust } from "@/components/sections";
+"use client";
+
+import { LoadingScreen } from "@/components/ui/LoadingScreen";
+import Navbar from "@/components/sections/Navbar";
 import { MouseGlow } from "@/components/ui/MouseGlow";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+import Hero from "@/components/sections/Hero";
+import Download from "@/components/sections/Download";
+import FAQ from "@/components/sections/FAQ";
+import Footer from "@/components/sections/Footer";
 import { StickyDownload } from "@/components/ui/StickyDownload";
 
 export default function Home() {
   return (
-    <main id="main-content" className="relative min-h-screen overflow-hidden bg-ink text-white">
-      <MouseGlow />
-      <Navbar />
-      <Hero />
-      <Trust />
-      <Features />
-      <Screenshots />
-      <HowItWorks />
-      <Tournaments />
-      <Download />
-      <FAQ />
-      <Footer />
-      <StickyDownload />
-    </main>
+    <>
+      <LoadingScreen />
+      <main id="main-content" className="relative min-h-screen overflow-hidden bg-background text-white">
+        <AnimatedBackground />
+        <MouseGlow />
+        <Navbar />
+        <Hero />
+        <Download />
+        <FAQ />
+        <Footer />
+        <StickyDownload />
+      </main>
+    </>
   );
 }

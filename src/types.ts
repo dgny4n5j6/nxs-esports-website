@@ -3,13 +3,6 @@ export type NavItem = {
   href: string;
 };
 
-export type Stat = {
-  label: string;
-  value: number;
-  suffix: string;
-  prefix?: string;
-};
-
 export type Feature = {
   title: string;
   description: string;
@@ -23,22 +16,6 @@ export type ScreenshotSlide = {
   items: string[];
 };
 
-export type Step = {
-  number: string;
-  title: string;
-  description: string;
-};
-
-export type Tournament = {
-  title: string;
-  mode: string;
-  entryFee: string;
-  prizePool: string;
-  slots: string;
-  matchTime: string;
-  status: "Live" | "Opening" | "Finals";
-};
-
 export type DownloadInfo = {
   label: string;
   value: string;
@@ -49,7 +26,7 @@ export type FAQItem = {
   answer: string;
 };
 
-export type CommunityPlatform = "whatsapp" | "telegram" | "instagram";
+export type CommunityPlatform = "discord" | "whatsapp";
 
 export type CommunityLink = {
   label: string;
